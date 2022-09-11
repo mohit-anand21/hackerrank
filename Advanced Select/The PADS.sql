@@ -27,5 +27,5 @@ ORDER BY NAME;
 
 SELECT CONCAT("There are a total of ",COUNT(OCCUPATION)," ",LOWER(OCCUPATION),"s.") 
 FROM OCCUPATIONS 
-GROUP BY OCCUPATION 
+GROUP BY OCCUPATION /* we use GROUP BY function for aggregate queries for example when we want to order by using functions like count(), sum(), etc.
 ORDER BY COUNT(OCCUPATION), OCCUPATION; 
